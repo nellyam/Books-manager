@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { ThrowStmt } from '@angular/compiler';
+import { Component} from '@angular/core';
+import { BookService } from './services/book/book.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Books-manager';
+
+ 
 }

@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div class="container text-center">
+  <form (ngSubmit)="onSubmitEditUser()" [formGroup]="userForm">
+
+    <div class="form-group">
+      <label for="firstname">Prenom</label>
+      <input type="text"
+             id="firstname"
+             class="form-control"
+             formControlName="firstname"
+             [(ngModel)]="user.firstname"
+      >
+    </div>
+
+
+    <div class="form-group">
+      <label for="lastname">Nom</label>
+      <input type="text"
+             id="lastname"
+             class="form-control"
+             formControlName="lastname"
+             [(ngModel)]="user.lastname"
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email"
+             id="email"
+             class="form-control"
+             formControlName="email"
+             [(ngModel)]="user.email"
+      >
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password"
+             id="password"
+             class="form-control"
+             formControlName="password"
+             [(ngModel)]="user.password"
+      >
+    </div>
+
+  <button class="btn btn-primary float-right" [disabled]="userForm.invalid">Modifier</button>
+  </form>
+</div>
+

@@ -1,0 +1,11 @@
+<div class="container text-center">
+  <div *ngIf="isAuth">
+
+     <button class="btn btn-dark float-right mt-2" (click)="onClickSignOut()">Déconnexion</button>
+      <a routerLink="/profil" class="btn btn-dark float-right m-2">Profil de {{user.firstname}}</a>
+
+  </div>
+  <h1>Books Mananger!</h1>
+</div>
+
+<hr>

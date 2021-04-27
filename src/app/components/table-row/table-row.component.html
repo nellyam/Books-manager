@@ -1,0 +1,13 @@
+  <td> {{title}} </td>
+  <td> {{author}} </td>
+  <td> {{status}} </td>
+  <td>
+     <button
+     type="button"
+     class="btn btn-dark m-2"
+     (click)="onClickSwitchBookStatus(nextStatus)"
+     >Baculer en {{nextStatus}}
+    </button>
+
+    <a [routerLink]="detailUrl" class="text-white text-decoration-none btn btn-success m-2">Détails</a>
+  </td>
